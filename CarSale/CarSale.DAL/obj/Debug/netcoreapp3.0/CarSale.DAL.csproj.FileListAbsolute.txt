@@ -8,3 +8,13 @@ D:\Documents\Repositories\CarSale\CarSale.DAL\bin\Debug\netcoreapp3.0\CarSale.DA
 D:\Documents\Repositories\CarSale\CarSale.DAL\bin\Debug\netcoreapp3.0\CarSale.DAL.pdb
 D:\Documents\Repositories\CarSale\CarSale.DAL\obj\Debug\netcoreapp3.0\CarSale.DAL.dll
 D:\Documents\Repositories\CarSale\CarSale.DAL\obj\Debug\netcoreapp3.0\CarSale.DAL.pdb
+D:\Documents\Repositories\Web\CareSale\CarSale\CarSale.DAL\bin\Debug\netcoreapp3.0\CarSale.DAL.deps.json
+D:\Documents\Repositories\Web\CareSale\CarSale\CarSale.DAL\bin\Debug\netcoreapp3.0\CarSale.DAL.runtimeconfig.json
+D:\Documents\Repositories\Web\CareSale\CarSale\CarSale.DAL\bin\Debug\netcoreapp3.0\CarSale.DAL.runtimeconfig.dev.json
+D:\Documents\Repositories\Web\CareSale\CarSale\CarSale.DAL\bin\Debug\netcoreapp3.0\CarSale.DAL.dll
+D:\Documents\Repositories\Web\CareSale\CarSale\CarSale.DAL\bin\Debug\netcoreapp3.0\CarSale.DAL.pdb
+D:\Documents\Repositories\Web\CareSale\CarSale\CarSale.DAL\obj\Debug\netcoreapp3.0\CarSale.DAL.csprojAssemblyReference.cache
+D:\Documents\Repositories\Web\CareSale\CarSale\CarSale.DAL\obj\Debug\netcoreapp3.0\CarSale.DAL.AssemblyInfoInputs.cache
+D:\Documents\Repositories\Web\CareSale\CarSale\CarSale.DAL\obj\Debug\netcoreapp3.0\CarSale.DAL.AssemblyInfo.cs
+D:\Documents\Repositories\Web\CareSale\CarSale\CarSale.DAL\obj\Debug\netcoreapp3.0\CarSale.DAL.dll
+D:\Documents\Repositories\Web\CareSale\CarSale\CarSale.DAL\obj\Debug\netcoreapp3.0\CarSale.DAL.pdb

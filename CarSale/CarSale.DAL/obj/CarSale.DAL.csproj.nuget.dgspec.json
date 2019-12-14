@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\Repositories\\CarSale\\CarSale.DAL\\CarSale.DAL.csproj": {}
+    "D:\\Documents\\Repositories\\Web\\CareSale\\CarSale\\CarSale.DAL\\CarSale.DAL.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\Repositories\\CarSale\\CarSale.DAL\\CarSale.DAL.csproj": {
+    "D:\\Documents\\Repositories\\Web\\CareSale\\CarSale\\CarSale.DAL\\CarSale.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Repositories\\CarSale\\CarSale.DAL\\CarSale.DAL.csproj",
+        "projectUniqueName": "D:\\Documents\\Repositories\\Web\\CareSale\\CarSale\\CarSale.DAL\\CarSale.DAL.csproj",
         "projectName": "CarSale.DAL",
-        "projectPath": "D:\\Documents\\Repositories\\CarSale\\CarSale.DAL\\CarSale.DAL.csproj",
+        "projectPath": "D:\\Documents\\Repositories\\Web\\CareSale\\CarSale\\CarSale.DAL\\CarSale.DAL.csproj",
         "packagesPath": "C:\\Users\\Nazar\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Repositories\\CarSale\\CarSale.DAL\\obj\\",
+        "outputPath": "D:\\Documents\\Repositories\\Web\\CareSale\\CarSale\\CarSale.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

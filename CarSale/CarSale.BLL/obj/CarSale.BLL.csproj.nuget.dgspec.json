@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\Repositories\\CarSale\\CarSale.BLL\\CarSale.BLL.csproj": {}
+    "D:\\Documents\\Repositories\\Web\\CareSale\\CarSale\\CarSale.BLL\\CarSale.BLL.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\Repositories\\CarSale\\CarSale.BLL\\CarSale.BLL.csproj": {
+    "D:\\Documents\\Repositories\\Web\\CareSale\\CarSale\\CarSale.BLL\\CarSale.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Repositories\\CarSale\\CarSale.BLL\\CarSale.BLL.csproj",
+        "projectUniqueName": "D:\\Documents\\Repositories\\Web\\CareSale\\CarSale\\CarSale.BLL\\CarSale.BLL.csproj",
         "projectName": "CarSale.BLL",
-        "projectPath": "D:\\Documents\\Repositories\\CarSale\\CarSale.BLL\\CarSale.BLL.csproj",
+        "projectPath": "D:\\Documents\\Repositories\\Web\\CareSale\\CarSale\\CarSale.BLL\\CarSale.BLL.csproj",
         "packagesPath": "C:\\Users\\Nazar\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Repositories\\CarSale\\CarSale.BLL\\obj\\",
+        "outputPath": "D:\\Documents\\Repositories\\Web\\CareSale\\CarSale\\CarSale.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
