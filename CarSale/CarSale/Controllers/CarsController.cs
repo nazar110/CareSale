@@ -13,10 +13,26 @@ namespace CarSale.Controllers
         {
             return View();
         }
-        public ViewResult ShowAllCars()
+        public ViewResult AllCars()
         {
             Mocks.MockCars allCars = new Mocks.MockCars();
             return View(allCars.AllCars);
         }
+        public ViewResult Details(string brandname, string modelname)
+        {
+            Mocks.MockCars allCars = new Mocks.MockCars();
+            var car = from elem in allCars.AllCars
+                      where elem.Brandname == brandname && elem.Modelname == modelname
+                      select elem;
+            return View(car.First());
+        }
+        //public string Details(string brandname, string modelname)
+        //{
+        //    Mocks.MockCars allCars = new Mocks.MockCars();
+        //    var car = from elem in allCars.AllCars
+        //              where elem.Brandname == brandname && elem.Modelname == modelname
+        //              select elem;
+        //    return ($"{car.First().Brandname} {car.First().Modelname}: {car.First().LongDescription}");
+        //}
     }
 }

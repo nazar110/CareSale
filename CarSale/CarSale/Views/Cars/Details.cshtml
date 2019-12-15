@@ -1,0 +1,30 @@
+﻿@using CarSale.Models
+@using CarSale.Mocks
+@{
+    ViewData["Title"] = "Details";
+}
+
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h1>Details for @($"{Model.Brandname} {Model.Modelname}")</h1>
+    <h3>@($"{Model.Brandname} {Model.Modelname}")</h3>
+    <img src=@Model.ImageUrl alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScqGXN9u_ymkHnqEptsXPte1luADbMzMvdq2Gg8hCV5rT9Ppffmw&s" width="500">
+    <p>Color: @Model.Color</p>
+    <p>Features: @Model.Features</p>
+    <p>Country Of Origin: @Model.CountryOfOrigin</p>
+    <p>Price: @Model.Price</p>
+    <p>Description: @Model.LongDescription</p>
+    <p><a class="btn btn-warning" href="#">Buy</a></p>
+    @{
+        /*
+            <form method="LINK" action="http://codehelper.ru">
+            <input type="submit" value="Go to CodeHelper!">
+            </form>
+         */
+    }
+    
+
+</body>
+</html>
