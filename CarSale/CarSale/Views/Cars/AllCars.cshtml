@@ -1,5 +1,4 @@
-﻿@using CarSale.Models
-@using CarSale.Mocks
+﻿@using CarSale.Mocks
 @{
     ViewData["Title"] = "AllCars";
 }
@@ -20,7 +19,7 @@
                     <p>Features: @car.Features</p>
                     <p>Country Of Origin: @car.CountryOfOrigin</p>
                     <p>Price: @car.Price</p>
-                    <p><a class="btn btn-warning" href="https://localhost:44381/Cars/Details/@car.Brandname?modelname=@car.Modelname}">Details</a></p>
+                    <p><a class="btn btn-warning" href="https://localhost:44381/Cars/CarDetails/@(car.Brandname)/@(car.Modelname)">Details</a></p>
                 </div>
                 /*
                             <form method="LINK" action="http://codehelper.ru">

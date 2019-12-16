@@ -18,21 +18,21 @@ namespace CarSale.Controllers
             Mocks.MockCars allCars = new Mocks.MockCars();
             return View(allCars.AllCars);
         }
-        public ViewResult Details(string brandname, string modelname)
+        public ActionResult Details(string brandname, string modelname)
         {
             Mocks.MockCars allCars = new Mocks.MockCars();
             var car = from elem in allCars.AllCars
                       where elem.Brandname == brandname && elem.Modelname == modelname
                       select elem;
-            return View(car.First());
+            return RedirectToAction("CarDetails", "CarsController", new { Brandname = brandname, Modelname = modelname });
         }
-        //public string Details(string brandname, string modelname)
-        //{
-        //    Mocks.MockCars allCars = new Mocks.MockCars();
-        //    var car = from elem in allCars.AllCars
-        //              where elem.Brandname == brandname && elem.Modelname == modelname
-        //              select elem;
-        //    return ($"{car.First().Brandname} {car.First().Modelname}: {car.First().LongDescription}");
-        //}
+        public ActionResult CarDetails(string brandname, string modelname)
+        {
+            Mocks.MockCars allCars = new Mocks.MockCars();
+            var cars = from elem in allCars.AllCars
+                       where elem.Brandname == brandname && elem.Modelname == modelname
+                       select elem;
+            return View(cars.First());
+        }
     }
 }
