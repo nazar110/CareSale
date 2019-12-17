@@ -45,14 +45,12 @@ namespace CarSale
             app.UseRouting();
 
             app.UseAuthorization();
-
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     "SeeCarDetails",
                     "{controller=Cars}/{action=CarDetails}/{brandname}/{modelname}"
-                    //"Cars/CarDetails/{brandname}/{modelname}", 
-                    //new { controller = "CarsController", action = "CarDetails"}
                     );
                 endpoints.MapControllerRoute(
                     name: "default",
