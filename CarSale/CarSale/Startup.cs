@@ -49,6 +49,12 @@ namespace CarSale
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    "SeeCarDetails",
+                    "{controller=Cars}/{action=CarDetails}/{brandname}/{modelname}"
+                    //"Cars/CarDetails/{brandname}/{modelname}", 
+                    //new { controller = "CarsController", action = "CarDetails"}
+                    );
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
