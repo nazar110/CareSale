@@ -10,7 +10,7 @@ namespace CarSale.Models
         public string City { get; set; }
         public string CityStreet { get; set; }
         public string StreetNumber { get; set; }
-        public CarDTO CarToBuy { get; set; }
+        //public CarDTO CarToBuy { get; set; }
         public string WayOfPurchase { get; set; }
         public bool Paid { get; set; }
     }

@@ -11,9 +11,13 @@ namespace CarSale.DAL.Entities
         [Key]
         public int Id { get; set; }
         [ForeignKey("CarId")]
-        public int CarId { get; set; }
+        public int CarIdToBuy { get; set; }
         [ForeignKey("UserId")]
         public int UserId { get; set; }
+        public string City { get; set; }
+        public string CityStreet { get; set; }
+        public string StreetNumber { get; set; }
+        public string WayOfPurchase { get; set; }
         public bool Paid { get; set; }
     }
 }

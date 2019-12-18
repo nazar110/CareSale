@@ -6,3 +6,6 @@ D:\Documents\Repositories\Web\CareSale\CarSale\CarSale.BLL\obj\Debug\netcoreapp3
 D:\Documents\Repositories\Web\CareSale\CarSale\CarSale.BLL\obj\Debug\netcoreapp3.0\CarSale.BLL.AssemblyInfo.cs
 D:\Documents\Repositories\Web\CareSale\CarSale\CarSale.BLL\obj\Debug\netcoreapp3.0\CarSale.BLL.dll
 D:\Documents\Repositories\Web\CareSale\CarSale\CarSale.BLL\obj\Debug\netcoreapp3.0\CarSale.BLL.pdb
+D:\Documents\Repositories\Web\CareSale\CarSale\CarSale.BLL\bin\Debug\netcoreapp3.0\CarSale.DAL.dll
+D:\Documents\Repositories\Web\CareSale\CarSale\CarSale.BLL\bin\Debug\netcoreapp3.0\CarSale.DAL.pdb
+D:\Documents\Repositories\Web\CareSale\CarSale\CarSale.BLL\obj\Debug\netcoreapp3.0\CarSale.BLL.csproj.CopyComplete

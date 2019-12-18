@@ -1,0 +1,32 @@
+﻿@using CarSale.Models
+@{
+    ViewData["Title"] = "SearchCar";
+}
+
+<!DOCTYPE html>
+<html>
+<body>
+    <div class="row mt-5 mb-2">
+        @{
+            foreach (var car in Model)
+            {
+                //if (car.Brandname == "Kia")
+                //{
+                    <div class="col-lg-6">
+                        <h3>@($"{car.Brandname} {car.Modelname}")</h3>
+                        <img src=@car.ImageUrl alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScqGXN9u_ymkHnqEptsXPte1luADbMzMvdq2Gg8hCV5rT9Ppffmw&s" width="500">
+                        <p>Color: @car.Color</p>
+                        <p>Features: @car.Features</p>
+                        <p>Country Of Origin: @car.CountryOfOrigin</p>
+                        <p>Price: @car.Price</p>
+                        <p><a class="btn btn-warning" href="https://localhost:44381/Cars/CarDetails/@(car.Brandname)/@(car.Modelname)">Details</a></p>
+                    </div>
+                //}
+
+            }
+        }
+    </div>
+
+</body>
+</html>
+

@@ -44,7 +44,15 @@ namespace CarSale.Controllers
             return View(cars.First());
         }
 
-        public ActionResult SearchCar(string search, int? i)
+        public ActionResult SearchCar(string search)
+        {
+            Mocks.MockCars allCars = new Mocks.MockCars();
+            var cars = from elem in allCars.AllCars
+                       where elem.Brandname == search || elem.Modelname == search
+                       select elem;
+            return View(cars);
+        }
+        public ActionResult PurchaseForm(string brandname, string modelname)
         {
             return View();
         }
