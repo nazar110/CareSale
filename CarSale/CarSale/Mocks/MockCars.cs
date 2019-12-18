@@ -29,7 +29,7 @@ namespace CarSale.Mocks
                 Modelname = "Sportage",
                 Color = "Blue",
                 Features = "Compact crossover",
-                CountryOfOrigin = "South Korea",
+                CountryOfOrigin = "Southern Korea",
                 Price = 8000,
                 LongDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut " +
                 "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea " +
@@ -57,6 +57,45 @@ namespace CarSale.Mocks
                 Features = "Sport car",
                 CountryOfOrigin = "USA",
                 Price = 25000,
+                LongDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut " +
+                "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea " +
+                "commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. " +
+                "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            },
+            new CarDTO() {
+                ImageUrl = "https://avtocentr.com.ua/uploads/auto_models/image_model/0000/07.png",
+                Brandname = "Kia",
+                Modelname = "Soul",
+                Color = "Green",
+                Features = "Good car for driving in city",
+                CountryOfOrigin = "Southern Korea",
+                Price = 8000,
+                LongDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut " +
+                "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea " +
+                "commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. " +
+                "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            },
+            new CarDTO() {
+                ImageUrl = "https://static.turbosquid.com/Preview/2018/11/27__01_04_01/F0000.jpg3DBAE602-187B-4D56-A654-E04BEE40FF4AZoom.jpg",
+                Brandname = "Dodge",
+                Modelname = "Charger",
+                Color = "Red",
+                Features = "Good car for fast driving",
+                CountryOfOrigin = "USA",
+                Price = 24000,
+                LongDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut " +
+                "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea " +
+                "commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. " +
+                "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            },
+            new CarDTO() {
+                ImageUrl = "https://avilon.ru/upload/iblock/2ab/2abdbd1a91e715f12d8cbbb8804860d3.png",
+                Brandname = "Dodge",
+                Modelname = "Charger",
+                Color = "Red",
+                Features = "Good car for fast driving",
+                CountryOfOrigin = "USA",
+                Price = 24000,
                 LongDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut " +
                 "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea " +
                 "commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. " +

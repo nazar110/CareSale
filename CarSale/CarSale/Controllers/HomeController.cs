@@ -28,6 +28,35 @@ namespace CarSale.Controllers
             return View();
         }
 
+        public IActionResult Help()
+        {
+            return View();
+        }
+        public IActionResult ContactUs()
+        {
+            return View();
+        }
+        public IActionResult Register()
+        {
+            return View();
+        }
+        public IActionResult Registered(Registration registration)
+        {
+            UserDTO user = new UserDTO()
+            {
+                Name = registration.Name,
+                Surname = registration.Surname,
+                Email = registration.Email,
+                Number = registration.Number,
+                Password = registration.Password
+            };
+            return Content($"{user.Name} {user.Surname} {user.Email} {user.Number} {user.Password}");
+        }
+        public IActionResult LogIn()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

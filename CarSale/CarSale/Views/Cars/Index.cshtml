@@ -1,6 +1,6 @@
 ﻿@using CarSale.Mocks;
 @using ReflectionIT.Mvc.Paging;
-@addTagHelper *,ReflectionIT.Mvc.Paging
+@addTagHelper*,ReflectionIT.Mvc.Paging
 @model ReflectionIT.Mvc.Paging.PagingList<CarSale.Models.CarDTO>
 @{
     ViewData["Title"] = "Index";
@@ -11,9 +11,6 @@
 <body>
 
     <h1>All Cars</h1>
-    <nav aria-label="Paging">
-        @await this.Component.InvokeAsync("Pager", new { pagingList = this.Model });
-    </nav>
     <div class="row mt-5 mb-2">
         @{
             foreach (var car in Model)
@@ -31,6 +28,8 @@
             }
         }
     </div>
-
+    <nav aria-label="Paging">
+        @await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
+    </nav>
 </body>
 </html>
