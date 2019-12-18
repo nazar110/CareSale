@@ -1,12 +1,52 @@
-﻿
+﻿@model Registration;
 @{
     ViewData["Title"] = "Register";
+    Registration registration = new Registration();
 }
-
-<h1>Registration Form</h1>
-<p>Name   </p>
-<p>Surname</p>
-<p>Email  </p>
-<p>Number </p>
-<p>Password</p>
-<p>Confirm Password</p>
+    <div class="row">
+        <form asp-action="Register" method="post" class="form-horizontal">
+            <div class="form-group">
+                <label asp-for="Name"></label>
+                <div class="col-md-12">
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="@registration.Surname"></label>
+                <div class="col-md-12">
+                    <input asp-for="@registration.Surname" class="form-control" />
+                    <span asp-validation-for="@registration.Surname" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="@registration.Email"></label>
+                <div class="col-md-12">
+                    <input asp-for="@registration.Email" class="form-control" />
+                    <span asp-validation-for="@registration.Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="@registration.Number"></label>
+                <div class="col-md-12">
+                    <input asp-for="@registration.Number" class="form-control" />
+                    <span asp-validation-for="@registration.Number" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="@registration.Password"></label>
+                <div class="col-md-12">
+                    <input asp-for="@registration.Password" class="form-control" />
+                    <span asp-validation-for="@registration.Password" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="@registration.ConfirmPassword"></label>
+                <div class="col-md-12">
+                    <input asp-for="@registration.ConfirmPassword" class="form-control" />
+                    <span asp-validation-for="@registration.ConfirmPassword" class="text-danger"></span>
+                </div>
+            </div>
+            <p><a class="btn btn-success" href="https://localhost:44381/Home/Registered/@(registration)">Register</a></p>
+        </form>
+    </div>

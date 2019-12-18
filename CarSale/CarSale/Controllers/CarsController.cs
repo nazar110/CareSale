@@ -3,20 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using PagedList.Mvc;
+using PagedList;
+using ReflectionIT.Mvc.Paging;
 
 namespace CarSale.Controllers
 {
     public class CarsController : Controller
     {
 
-        public IActionResult Index()
-        {
-            return View();
-        }
-        public ViewResult AllCars()
+        public IActionResult Index(int page = 1)
         {
             Mocks.MockCars allCars = new Mocks.MockCars();
-            return View(allCars.AllCars);
+            var query = allCars.AllCars;
+            var model = PagingList.Create(query, 6, page);
+            return View(model);
+        }
+        public ViewResult AllCars(int page = 1)
+        {
+            Mocks.MockCars allCars = new Mocks.MockCars();
+            var query = allCars.AllCars;
+            var model = PagingList.Create(query, 3, page);
+            //return View(allCars.AllCars);
+            return View(model);
         }
         public ActionResult Details(string brandname, string modelname)
         {
@@ -33,6 +42,11 @@ namespace CarSale.Controllers
                        where elem.Brandname == brandname && elem.Modelname == modelname
                        select elem;
             return View(cars.First());
+        }
+
+        public ActionResult SearchCar(string search, int? i)
+        {
+            return View();
         }
     }
 }

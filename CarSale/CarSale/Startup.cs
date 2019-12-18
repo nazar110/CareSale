@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using ReflectionIT.Mvc.Paging;
 
 namespace CarSale
 {
@@ -23,6 +24,9 @@ namespace CarSale
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvcCore();
+            services.AddMvc();
+            services.AddPaging();
             services.AddControllersWithViews();
         }
 
@@ -51,6 +55,14 @@ namespace CarSale
                 endpoints.MapControllerRoute(
                     "SeeCarDetails",
                     "{controller=Cars}/{action=CarDetails}/{brandname}/{modelname}"
+                    );
+                endpoints.MapControllerRoute(
+                    "Paging",
+                    "{controller=Cars}/{action=AllCars}/{page}"
+                    );
+                endpoints.MapControllerRoute(
+                    "RegisterUser",
+                    "{controller=Home}/{action=Registered}/{registration}"
                     );
                 endpoints.MapControllerRoute(
                     name: "default",

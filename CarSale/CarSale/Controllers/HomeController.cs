@@ -40,6 +40,18 @@ namespace CarSale.Controllers
         {
             return View();
         }
+        public IActionResult Registered(Registration registration)
+        {
+            UserDTO user = new UserDTO()
+            {
+                Name = registration.Name,
+                Surname = registration.Surname,
+                Email = registration.Email,
+                Number = registration.Number,
+                Password = registration.Password
+            };
+            return Content($"{user.Name} {user.Surname} {user.Email} {user.Number} {user.Password}");
+        }
         public IActionResult LogIn()
         {
             return View();
